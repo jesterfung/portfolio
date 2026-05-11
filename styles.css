@@ -679,6 +679,7 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
   .hero-section > *:not(.hero-bottom):not(.hero-content-wrap):not(#aboutContent) { display: none !important; }
   .hero-content-wrap > * { display: none !important; }
   .hero-bottom { margin-top: 0 !important; }
+  .hero-content-wrap.show-about ~ .hero-bottom { display: none !important; }
   .work-meta {
     position: relative !important;
     width: 100% !important;
