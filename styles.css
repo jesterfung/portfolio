@@ -493,7 +493,7 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
 .dot.active { width: 2.2rem; background: rgba(255,255,255,.68); }
 
 @media (max-width: 1099px) { .hero-title { font-size: clamp(3.2rem, 12vw, 5rem); } }
-@media (max-width: 560px) { .hero-title { font-size: 3.2rem; } .work-card { flex: 0 0 240px; height: 10rem; } .work-header { flex-direction: column; align-items: flex-start; gap: .5rem; } }
+@media (max-width: 560px) { .hero-title { font-size: 3.2rem; } .work-card { flex: 0 0 240px; height: 6rem; } .work-header { flex-direction: column; align-items: flex-start; gap: .5rem; } }
 
 /* ═══════════════════════════════════════════════════════════
    ABOUT page
@@ -581,7 +581,7 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
 .work-section .work-card { height: 11rem; }
 
 @media (max-width: 560px) {
-  .work-section .work-card { flex: 0 0 240px; height: 10rem; }
+  .work-section .work-card { flex: 0 0 240px; height: 6rem; }
   .work-section .work-header { flex-direction: column; align-items: flex-start; gap: .5rem; }
 }
 
