@@ -703,8 +703,12 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
     width: 100% !important;
     height: auto !important;
     border-radius: 0 !important;
-    border-left: none !important;
-    border-right: none !important;
+    border: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+    transition: none !important;
   }
   .about-content.visible { display: block; padding-bottom: 2rem; }
 }
