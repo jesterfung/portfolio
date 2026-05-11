@@ -681,7 +681,9 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
   .hero-bottom { margin-top: 0 !important; }
   .hero-content-wrap.show-about ~ .hero-bottom { display: none !important; }
   body:has(.hero-content-wrap.show-about) #vidCenterBar,
-  body:has(.hero-content-wrap.show-about) .work-meta { display: none !important; }
+  body:has(.hero-content-wrap.show-about) .work-meta,
+  body:has(.hero-content-wrap.show-about) #workVideoBg,
+  body:has(.hero-content-wrap.show-about) #workImgBg { display: none !important; }
   .work-meta {
     position: relative !important;
     width: 100% !important;
