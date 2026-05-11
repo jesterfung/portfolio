@@ -721,6 +721,7 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
 .vid-sel-btn:hover, .img-sel-btn:hover { border-color: rgba(255,255,255,.3); color: rgba(255,255,255,.85); background: rgba(255,255,255,.1); }
 .vid-sel-btn.active, .img-sel-btn.active { border-color: var(--diji-cream); color: var(--diji-cream); background: rgba(245,229,192,.1); }
 #vidCenterBar { position: fixed; bottom: calc(var(--work-meta-bottom) + 1rem); left: 50%; transform: translateX(-50%); z-index: 20; display: none; align-items: center; gap: .75rem; pointer-events: auto; }
+body:not(:has(#workVideoBg.active)) #vidCenterBar { display: none !important; }
 #vidCenterBar.visible { display: flex; }
 @media (max-width: 1099px) {
   #vidCenterBar {
