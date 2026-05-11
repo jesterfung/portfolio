@@ -546,6 +546,11 @@
         track.scrollLeft = scrollLeft - walk;
       });
       track.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+
+      if (cards[0]) {
+        selectCard(0);
+        cards[0].dispatchEvent(new Event('click', { bubbles: false }));
+      }
     }
 
     initStrip('homeTrack', 'homeCount');
