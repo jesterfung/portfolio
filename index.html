@@ -550,6 +550,18 @@
 
     initStrip('homeTrack', 'homeCount');
 
+    /* ── Mark video/image as loaded for spinner removal ──── */
+    document.querySelectorAll('#workVideoBg .work-vid iframe').forEach(f => {
+      const wrap = f.closest('.work-vid');
+      if (!wrap) return;
+      if (f.complete) wrap.classList.add('loaded');
+      f.addEventListener('load', () => wrap.classList.add('loaded'));
+    });
+    document.querySelectorAll('#workImgBg .work-img').forEach(img => {
+      if (img.complete && img.naturalWidth > 0) img.classList.add('loaded');
+      else img.addEventListener('load', () => img.classList.add('loaded'));
+    });
+
     /* ── Image Selector ──────────────────────────────────── */
     (function initImgSelector() {
       const imgBtns = document.querySelectorAll('#imgSelector .img-sel-btn');

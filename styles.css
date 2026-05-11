@@ -444,6 +444,24 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
 .sp-nav-links a[data-page].active { color: var(--diji-cream); transform: scale(1.12); }
 .sp-nav-links a[data-page].active::after { left: 10%; right: 10%; }
 
+/* ── Loading spinner for video/image backgrounds ───────── */
+@keyframes work-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+#workVideoBg::before, #workImgBg::before {
+  content: ''; position: absolute; top: 50%; left: 50%;
+  width: 38px; height: 38px; margin: 0;
+  border: 2px solid rgba(255,255,255,.15);
+  border-top-color: var(--diji-cream, #f5e5c0);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: work-spin .9s linear infinite;
+  z-index: 2; pointer-events: none;
+  opacity: 0; transition: opacity .25s;
+}
+#workVideoBg.active:has(.work-vid.active:not(.loaded))::before,
+#workImgBg.active:has(.work-img.active:not(.loaded))::before {
+  opacity: 1;
+}
+
 /* ═══════════════════════════════════════════════════════════
    HOME page
    ═══════════════════════════════════════════════════════════ */
