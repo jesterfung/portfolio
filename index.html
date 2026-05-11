@@ -656,6 +656,8 @@
 
       window._vidPauseAll = () => vids.forEach(el => playerOf(el).pause());
       window._vidPlayActive = () => { const el = getActiveEl(); if (el) playerOf(el).play(); };
+      window._vidStartProgress = startProgress;
+      startProgress();
 
       selBtns.forEach(btn => {
         btn.addEventListener('click', e => {
