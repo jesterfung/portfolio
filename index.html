@@ -751,7 +751,8 @@
        Custom cursor
        ═══════════════════════════════════════════════════════════ */
     (function initCursor() {
-      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth >= 1100;
+      if (!isDesktop) {
         document.querySelectorAll('.cursor-dot, .cursor-ring').forEach(el => el.remove());
         return;
       }
