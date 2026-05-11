@@ -684,6 +684,7 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
   body:has(.hero-content-wrap.show-about) .work-meta,
   body:has(.hero-content-wrap.show-about) #workVideoBg,
   body:has(.hero-content-wrap.show-about) #workImgBg { display: none !important; }
+  body:has(.hero-content-wrap.show-about) .about-bg { display: block !important; }
   .work-meta {
     position: relative !important;
     width: 100% !important;
