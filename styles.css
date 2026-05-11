@@ -51,6 +51,9 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
              height .25s cubic-bezier(.22,1,.36,1);
 }
 .cursor-ring.is-hover { width:76px; height:76px; }
+@media (max-width: 1099px), (hover: none), (pointer: coarse) {
+  .cursor-dot, .cursor-ring { display: none !important; }
+}
 
 /* ── Header ─────────────────────────────────────────────── */
 /* ── Diji Button ────────────────────────────────────────── */
