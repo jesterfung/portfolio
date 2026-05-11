@@ -751,7 +751,10 @@
        Custom cursor
        ═══════════════════════════════════════════════════════════ */
     (function initCursor() {
-      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        document.querySelectorAll('.cursor-dot, .cursor-ring').forEach(el => el.remove());
+        return;
+      }
       document.body.classList.add('cursor-on');
       const dot = document.querySelector('.cursor-dot');
       const ring = document.querySelector('.cursor-ring');
