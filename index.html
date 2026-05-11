@@ -664,6 +664,9 @@
       window._vidStartProgress = startProgress;
       startProgress();
 
+      const initialActive = getActiveEl();
+      if (initialActive) playerOf(initialActive).play().catch(() => {});
+
       selBtns.forEach(btn => {
         btn.addEventListener('click', e => {
           e.stopPropagation();
