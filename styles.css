@@ -701,8 +701,7 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
     border-left: none !important;
     border-right: none !important;
   }
-  .about-content.visible { display: block; }
-  .hero-content-wrap.show-about .hero-content { display: none; }
+  .about-content.visible { display: block; padding-bottom: 2rem; }
 }
 
 /* ── Image Selector ──────────────────────────────────── */
