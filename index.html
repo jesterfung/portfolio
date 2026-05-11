@@ -554,7 +554,6 @@
     document.querySelectorAll('#workVideoBg .work-vid iframe').forEach(f => {
       const wrap = f.closest('.work-vid');
       if (!wrap) return;
-      if (f.complete) wrap.classList.add('loaded');
       f.addEventListener('load', () => wrap.classList.add('loaded'));
     });
     document.querySelectorAll('#workImgBg .work-img').forEach(img => {
