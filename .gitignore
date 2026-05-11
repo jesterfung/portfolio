@@ -1,0 +1,15 @@
+.DS_Store
+.claude/
+CLAUDE.md
+
+# Unused local video sources (using Vimeo iframe instead)
+asset/**/*.mp4
+
+# PNG originals — .webp versions are used in HTML
+asset/work/*.png
+
+# Personal resume — not for public repo
+asset/about/KFUNG Jobsdb Resume.pdf
+
+# Old drafts / build output
+output/

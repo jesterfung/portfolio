@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#050e14">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Jester Fung | 3D Artist &amp; AI Content Creator — Hong Kong</title>
+  <meta name="description" content="Portfolio of Jester Fung — Hong Kong-based 3D Artist with 13 years across four studios. Specializing in 3D animation, VFX, and AI-driven production for Web3 marketing campaigns at Animoca Brands.">
+  <meta name="author" content="Jester Fung">
+  <meta name="keywords" content="Jester Fung, 3D Artist, VFX, AI Content, Blender, Animoca Brands, Web3, Hong Kong, 3D Animation, Generative AI, Spine 2D, Substance 3D">
+  <link rel="canonical" href="https://jesterfung.github.io/portfolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_HK">
+  <meta property="og:site_name" content="Jester Fung Portfolio">
+  <meta property="og:title" content="Jester Fung | 3D Artist &amp; AI Content Creator">
+  <meta property="og:description" content="13 years of 3D animation, VFX, and AI-driven production. Currently leading AI content for Web3 campaigns at Animoca Brands.">
+  <meta property="og:url" content="https://jesterfung.github.io/portfolio/">
+  <meta property="og:image" content="https://jesterfung.github.io/portfolio/asset/work/00001.webp">
+  <meta property="og:image:alt" content="Animoca mascot 3D render by Jester Fung">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jester Fung | 3D Artist &amp; AI Content Creator">
+  <meta name="twitter:description" content="3D animation, VFX, and AI-driven production for Web3 marketing.">
+  <meta name="twitter:image" content="https://jesterfung.github.io/portfolio/asset/work/00001.webp">
+
+  <!-- Perf: preconnect critical origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://player.vimeo.com">
+  <link rel="preconnect" href="https://i.vimeocdn.com">
+  <link rel="preconnect" href="https://f.vimeocdn.com">
+
+  <!-- Perf: preload above-the-fold hero image -->
+  <link rel="preload" as="image" href="asset/work/00001.webp" fetchpriority="high">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Vimeo Player API (defer — not needed for first paint) -->
+  <script src="https://player.vimeo.com/api/player.js" defer></script>
+
+  <!-- Structured data: Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jester Fung",
+    "jobTitle": "3D Artist & AI Content Creator",
+    "worksFor": { "@type": "Organization", "name": "Animoca Brands Limited" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Hong Kong" },
+    "email": "mailto:Jester_jobsdb@icloud.com",
+    "url": "https://jesterfung.github.io/portfolio/",
+    "sameAs": ["https://portaly.cc/jesterfung"],
+    "knowsAbout": ["3D Animation", "VFX", "Generative AI", "Blender", "Unity 3D", "NFT Design", "Web3 Content"]
+  }
+  </script>
+</head>
+<body>
+  <a class="visually-hidden" href="#main">Skip to content</a>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Fixed backgrounds — outside all .page divs to avoid transform flash -->
+  <div id="workBg" aria-hidden="true"></div>
+  <div class="hero-overlay" id="heroOverlay" aria-hidden="true"></div>
+  <div class="about-bg" id="aboutBg" aria-hidden="true" hidden></div>
+
+  <main id="main">
+    <!-- Background image stack -->
+    <div id="workImgBg" aria-hidden="true">
+      <img class="work-img active" data-img="1" src="asset/work/00001.webp" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+      <img class="work-img" data-img="2" src="asset/work/props03.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+      <img class="work-img" data-img="3" src="asset/work/props01.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+      <img class="work-img" data-img="4" src="asset/work/AB_003.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+    </div>
+
+    <!-- Background video stack -->
+    <div id="workVideoBg" aria-hidden="true">
+      <div class="work-vid active" data-vid="reel">
+        <iframe src="https://player.vimeo.com/video/1190382594?background=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="border:0;" title="Reel 2020-2026" loading="lazy"></iframe>
+      </div>
+      <div class="work-vid" data-vid="p3-1">
+        <iframe src="https://player.vimeo.com/video/1190397349?background=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="border:0;" title="Project 03 clip 1" loading="lazy"></iframe>
+      </div>
+      <div class="work-vid" data-vid="p3-2">
+        <iframe src="https://player.vimeo.com/video/1190397350?background=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="border:0;" title="Project 03 clip 2" loading="lazy"></iframe>
+      </div>
+      <div class="work-vid" data-vid="p3-3">
+        <iframe src="https://player.vimeo.com/video/1190397374?background=1&autopause=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="border:0;" title="Project 03 clip 3" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <!-- Video center bar -->
+    <div id="vidCenterBar" role="toolbar" aria-label="Video playback controls">
+      <button class="vid-vol-btn" id="vidPlayBtn" type="button" aria-label="Toggle play">
+        <svg class="play-icon-play" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="4,2 13,7.5 4,13" fill="currentColor" stroke="none"/></svg>
+        <svg class="play-icon-pause" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" style="display:none" aria-hidden="true"><line x1="5" y1="2.5" x2="5" y2="12.5"/><line x1="10" y1="2.5" x2="10" y2="12.5"/></svg>
+      </button>
+      <div class="vid-timeline-wrap" style="width:200px;max-width:200px"><div class="vid-timeline" id="vidTimeline" role="slider" aria-label="Video progress" aria-valuemin="0" aria-valuemax="100"><div class="vid-progress" id="vidProgress"></div></div></div>
+      <div class="vid-vol-wrap">
+        <button class="vid-vol-btn" id="vidVolBtn" type="button" aria-label="Toggle mute">
+          <svg class="vol-icon-on" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5.5h2.5L8 2.5v10L4.5 9.5H2z"/><path d="M10.5 4.5a4 4 0 0 1 0 6M12.5 2.5a7 7 0 0 1 0 10"/></svg>
+          <svg class="vol-icon-off" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" style="display:none" aria-hidden="true"><path d="M2 5.5h2.5L8 2.5v10L4.5 9.5H2z"/><path d="M11 6l2.5 3M13.5 6L11 9"/></svg>
+        </button>
+        <input class="vid-vol-slider" id="vidVolSlider" type="range" min="0" max="1" step="0.01" value="0.15" aria-label="Volume">
+      </div>
+      <button class="vid-vol-btn" id="vidFullscreenBtn" type="button" aria-label="Toggle fullscreen">
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 5V2h3M10 2h3v3M13 10v3h-3M5 13H2v-3"/></svg>
+      </button>
+    </div>
+
+    <!-- Work meta (intro card + selectors) -->
+    <aside class="work-meta" id="workMeta" aria-label="Project details">
+      <section class="work-intro" id="workIntro" aria-live="polite">
+        <h3 id="workIntroTitle"></h3>
+        <p id="workIntroText"></p>
+      </section>
+      <div class="img-selector" id="imgSelector" role="tablist" aria-label="Image gallery">
+        <div class="vid-sel-clips">
+          <button class="img-sel-btn" type="button" data-img="1" aria-label="Image 1"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="2" width="12" height="10" rx="1.5"/><path d="M1 9l3-3 2 2 3-4 4 5"/></svg><span>01</span></button>
+          <button class="img-sel-btn" type="button" data-img="2" aria-label="Image 2"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="2" width="12" height="10" rx="1.5"/><path d="M1 9l3-3 2 2 3-4 4 5"/></svg><span>02</span></button>
+          <button class="img-sel-btn" type="button" data-img="3" aria-label="Image 3"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="2" width="12" height="10" rx="1.5"/><path d="M1 9l3-3 2 2 3-4 4 5"/></svg><span>03</span></button>
+          <button class="img-sel-btn" type="button" data-img="4" aria-label="Image 4"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="2" width="12" height="10" rx="1.5"/><path d="M1 9l3-3 2 2 3-4 4 5"/></svg><span>04</span></button>
+        </div>
+      </div>
+      <div class="video-selector" id="videoSelector" role="tablist" aria-label="Video selector">
+        <div class="vid-sel-clips" id="vidSelClips">
+          <button class="vid-sel-btn vid-sel-regular active" type="button" data-vid="p3-1" aria-label="Background video 1"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="9" height="8" rx="1.5"/><path d="M10 5.5l3-2v7l-3-2"/></svg><span>01</span></button>
+          <button class="vid-sel-btn vid-sel-regular" type="button" data-vid="p3-2" aria-label="Background video 2"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="9" height="8" rx="1.5"/><path d="M10 5.5l3-2v7l-3-2"/></svg><span>02</span></button>
+          <button class="vid-sel-btn vid-sel-regular" type="button" data-vid="p3-3" aria-label="Background video 3"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="9" height="8" rx="1.5"/><path d="M10 5.5l3-2v7l-3-2"/></svg><span>03</span></button>
+          <button class="vid-sel-btn vid-sel-reel active" type="button" data-vid="reel" aria-label="Reel" style="display:none"><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="9" height="8" rx="1.5"/><path d="M10 5.5l3-2v7l-3-2"/></svg><span>Reel</span></button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ═══ HOME page — Hero + Work strip ═══ -->
+    <article class="page" data-page="home">
+      <section class="hero-section" id="home" aria-label="Home">
+        <div class="hero-content-wrap">
+          <div class="hero-content"></div>
+        </div>
+
+        <!-- About popup -->
+        <section class="about-content" id="aboutContent" aria-label="About Jester Fung" aria-hidden="true">
+          <div class="about-section">
+            <div class="section-inner">
+              <header class="strip-kicker">ABOUT</header>
+              <h2 class="section-title">Background</h2>
+              <p class="section-desc">Hong Kong-based 3D Artist with thirteen years across four studios. Started in mobile games, pivoted to 3D animation and VFX in 2019, and now leads AI-driven production for Web3 marketing campaigns at Animoca Brands. Passionate about merging generative AI with traditional 3D pipelines to accelerate creative output without sacrificing quality.</p>
+
+              <ul class="tag-grid" aria-label="Skills">
+                <li class="tag-item">3D Animation</li><li class="tag-item">VFX</li><li class="tag-item">AI Generation</li><li class="tag-item">Unity 3D</li><li class="tag-item">Blender</li><li class="tag-item">NFT Design</li><li class="tag-item">Web3 Content</li><li class="tag-item">Spine 2D</li><li class="tag-item">Substance 3D</li><li class="tag-item">After Effects</li>
+              </ul>
+
+              <h3 class="strip-kicker">CAREER HISTORY</h3>
+              <ol class="career-list">
+                <li class="career-item">
+                  <h4 class="career-role">3D Artist <span>at Animoca Brands Limited</span></h4>
+                  <p class="career-duration"><time datetime="2022-04">Apr 2022</time> &ndash; Present <span>(4 years 1 month)</span></p>
+                </li>
+                <li class="career-item">
+                  <h4 class="career-role">Game Artist <span>at Animoca Brands Limited</span></h4>
+                  <p class="career-duration"><time datetime="2018-03">Mar 2018</time> &ndash; <time datetime="2022-04">Apr 2022</time> <span>(4 years 2 months)</span></p>
+                  <div class="career-body">
+                    <p class="career-games">Worked on <strong>Beast Quest Ultimate Heroes</strong> game development.</p>
+                    <ul class="career-tags"><li>Monster Design</li><li>Scene Design</li><li>Animation</li><li>Particle Effect</li><li>3D Modeling</li><li>UV Texture</li></ul>
+                  </div>
+                </li>
+                <li class="career-item">
+                  <h4 class="career-role">Game Artist <span>at Side Quest Limited</span></h4>
+                  <p class="career-duration"><time datetime="2013-10">Oct 2013</time> &ndash; <time datetime="2018-03">Mar 2018</time> <span>(4 years 6 months)</span></p>
+                  <div class="career-body">
+                    <p class="career-games">Worked on <strong>Density of Destiny</strong>, <strong>Cardinal Pixel</strong>, <strong>Squadra</strong> and <strong>Fare Refusal</strong>.</p>
+                    <ul class="career-tags"><li>Monster Design</li><li>Scene Design</li><li>Animation</li><li>Particle Effect</li><li>3D Modeling</li><li>UV Texture</li></ul>
+                  </div>
+                </li>
+                <li class="career-item">
+                  <h4 class="career-role">Game Artist <span>at M-Inverse Holdings Limited</span></h4>
+                  <p class="career-duration"><time datetime="2011-07">Jul 2011</time> &ndash; <time datetime="2012-11">Nov 2012</time> <span>(1 year 5 months)</span></p>
+                  <div class="career-body">
+                    <p class="career-games">Worked on <strong>Bulu Monster</strong> game development.</p>
+                    <ul class="career-tags"><li>Monster Design</li><li>Scene Design</li><li>3D Modeling</li><li>World Map</li><li>UV Texture</li></ul>
+                  </div>
+                </li>
+              </ol>
+
+              <h3 class="strip-kicker">EDUCATION</h3>
+              <ul class="edu-list">
+                <li class="edu-item">
+                  <h4 class="edu-title">Professional Diploma in Concept Art &amp; Design</h4>
+                  <p class="edu-school">Hong Kong Christian Service Kwun Tong Vocational Training Centre</p>
+                  <p class="edu-year">Finished <time datetime="2010">2010</time></p>
+                </li>
+                <li class="edu-item">
+                  <h4 class="edu-title">Advanced Diploma in Illustration &amp; Design</h4>
+                  <p class="edu-school">Hong Kong Christian Service Kwun Tong Vocational Training Centre</p>
+                  <p class="edu-year">Finished <time datetime="2009">2009</time></p>
+                </li>
+                <li class="edu-item">
+                  <h4 class="edu-title">Diploma in Visual Arts</h4>
+                  <p class="edu-school">Hong Kong Christian Service Kwun Tong Vocational Training Centre</p>
+                  <p class="edu-year">Finished <time datetime="2008">2008</time></p>
+                </li>
+              </ul>
+
+              <h3 class="strip-kicker">CERTIFICATIONS</h3>
+              <ul class="cert-list">
+                <li class="cert-item">
+                  <header class="cert-header">
+                    <h4 class="cert-title">Gemini Certified University Student</h4>
+                    <p class="cert-issuer">Issued by Google for Education</p>
+                  </header>
+                  <p class="cert-date"><time datetime="2026-03">Mar 2026</time> &ndash; <time datetime="2029-03">Mar 2029</time></p>
+                  <p class="cert-desc">A Google-certified Gemini University student can articulate and demonstrate fundamental knowledge of generative AI concepts and Gemini's core features and capabilities in an educational context.</p>
+                </li>
+                <li class="cert-item">
+                  <header class="cert-header">
+                    <h4 class="cert-title">Gemini Certified Faculty</h4>
+                    <p class="cert-issuer">Issued by Google for Education</p>
+                  </header>
+                  <p class="cert-date"><time datetime="2026-03">Mar 2026</time> &ndash; <time datetime="2029-03">Mar 2029</time></p>
+                  <p class="cert-desc">A Google Certified Gemini Faculty member can articulate and demonstrate foundational knowledge of generative AI concepts and the core features and capabilities of Gemini within the educational context.</p>
+                </li>
+              </ul>
+
+              <div class="info-grid">
+                <div class="info-block"><h4>Languages</h4><p>Chinese (Cantonese)<br>English</p></div>
+                <div class="info-block"><h4>Location</h4><p>Hong Kong</p></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work strip -->
+        <footer class="hero-bottom">
+          <header class="work-header">
+            <h2 class="strip-kicker">WORK</h2>
+            <div class="work-nav" aria-label="Project counter">
+              <span class="work-count" id="homeCount">01</span>
+              <span class="work-count" style="opacity:.35">03</span>
+            </div>
+          </header>
+          <div class="work-track-wrap">
+            <nav class="work-track" id="homeTrack" aria-label="Featured work">
+              <div class="work-track-spacer" aria-hidden="true"></div>
+              <a class="work-card active" href="#" data-index="0" data-vid-card="true" data-reel="true" data-intro="Demo reel spanning 2020–2026 — six years of 3D animation, VFX, and AI-driven production across mobile games and Web3 marketing campaigns.">
+                <span class="card-orbit" aria-hidden="true"></span>
+                <span class="card-tag">Demo Reel &middot; 2020–2026</span>
+                <span class="card-title">Reel 2020-2026</span>
+                <span class="card-num" aria-hidden="true">01</span>
+              </a>
+              <a class="work-card" href="#" data-index="1" data-bg="asset/work/00001.webp" data-images="asset/work/00001.webp|asset/work/props03.webp|asset/work/props01.webp|asset/work/AB_003.webp" data-intro="I spearheaded the end-to-end 3D production for Animoca's character mascots, scenes, and props. My role encompassed the entire workflow, from initial concept and design to modeling, texturing, rigging, lighting, animation, and final rendering, all executed within Blender.">
+                <span class="card-orbit" aria-hidden="true"></span>
+                <span class="card-tag">3D Blender &middot; Character Design &middot; 2025</span>
+                <span class="card-title">Animoca mascot</span>
+                <span class="card-num" aria-hidden="true">02</span>
+              </a>
+              <a class="work-card" href="#" data-index="2" data-vid-card="true" data-intro="AI video production project — three-part cinematic series produced using Kling AI, After Effects, and custom motion pipelines.">
+                <span class="card-orbit" aria-hidden="true"></span>
+                <span class="card-tag">AI Video &middot; 2025</span>
+                <span class="card-title">Project 03</span>
+                <span class="card-num" aria-hidden="true">03</span>
+              </a>
+              <div class="work-track-spacer" aria-hidden="true"></div>
+            </nav>
+          </div>
+        </footer>
+      </section>
+    </article>
+  </main>
+
+  <!-- ════ Shared Side Panel ════ -->
+  <div class="sp-overlay" id="spOverlay"></div>
+  <aside class="side-panel" id="sidePanel" aria-label="Profile and navigation">
+    <button class="sp-close" id="spClose" type="button" aria-label="Close profile">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12"/></svg>
+    </button>
+    <div class="sp-panel-scroll">
+      <div class="sp-status">
+        <div class="sp-status-left"><span class="sp-dot" aria-hidden="true"></span><span>OPEN TO 3D &middot; VFX &middot; AI ROLES</span></div>
+        <div class="sp-time" id="spTime" aria-label="Hong Kong time">17:46 HKT</div>
+      </div>
+      <nav class="sp-nav" aria-label="Primary">
+        <div class="sp-nav-links">
+          <a href="#/" data-route>HOME</a>
+          <a href="#/about" data-page="about" data-route>ABOUT ME</a>
+        </div>
+      </nav>
+      <div class="sp-dropdown open" id="spDropdown">
+        <section class="sp-card sp-profile">
+          <header class="sp-profile-header">
+            <div class="sp-profile-avatar" aria-hidden="true"><div class="sp-avatar-circle"></div><div class="sp-avatar-deco"></div></div>
+            <div class="sp-profile-titles">
+              <h1>JESTER FUNG</h1>
+              <p>3D ARTIST &amp; AI CONTENT CREATOR</p>
+            </div>
+          </header>
+          <p class="sp-profile-bio">Hong Kong-based. Thirteen years across four studios &mdash; most recently at Animoca Brands (2018 &ndash; 25), leading AI-driven production for Web3 marketing campaigns.</p>
+          <a href="mailto:Jester_jobsdb@icloud.com" class="diji-button sp-contact-btn">
+            CONTACT ME
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="12" height="8" rx="1.5"/><path d="M2 5l6 4 6-4"/></svg>
+          </a>
+        </section>
+        <div class="sp-social-grid">
+          <a href="https://portaly.cc/jesterfung" class="diji-button sp-contact-btn" target="_blank" rel="noopener noreferrer">
+            PORTFOLIO
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M2 8h12M8 2c1.5 2.5 2 3.5 2 6s-.5 3.5-2 6c-1.5-2.5-2-3.5-2-6s.5-3.5 2-6z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <script>
+    /* ═══════════════════════════════════════════════════════════
+       Hash Router
+       ═══════════════════════════════════════════════════════════ */
+    const pages = Array.from(document.querySelectorAll('.page'));
+    const navLinks = document.querySelectorAll('.sp-nav-links a[data-page]');
+
+    const aboutBg = document.getElementById('aboutBg');
+    const heroOverlay = document.getElementById('heroOverlay');
+
+    function showPage(name) {
+      pages.forEach(p => { p.hidden = (p.dataset.page !== name); });
+      navLinks.forEach(a => {
+        a.classList.toggle('active', a.dataset.page === name && name !== 'home');
+      });
+      document.body.style.overflow = name === 'home' ? '' : 'auto';
+      if (aboutBg) aboutBg.hidden = (name !== 'about');
+      if (heroOverlay) heroOverlay.hidden = (name !== 'home');
+      const workMeta = document.getElementById('workMeta');
+      if (workMeta) workMeta.style.display = name === 'home' ? '' : 'none';
+      if (name === 'home') hideAbout();
+      const workBgEl = document.getElementById('workBg');
+      if (workBgEl) workBgEl.style.opacity = '0';
+    }
+
+    const heroWrap = document.querySelector('.hero-content-wrap');
+    const aboutContentEl = document.getElementById('aboutContent');
+    function alignAboutBottom() {
+      const workIntro = document.getElementById('workIntro');
+      if (!aboutContentEl || !workIntro) return;
+      const fs = parseFloat(getComputedStyle(document.documentElement).fontSize);
+      aboutContentEl.style.bottom = (13.8 * fs) + 'px';
+      const spDropdown = document.getElementById('spDropdown');
+      const wasOpen = spDropdown && spDropdown.classList.contains('open');
+      if (spDropdown && !wasOpen) spDropdown.style.maxHeight = '2400px';
+      const profile = document.querySelector('.sp-profile');
+      if (profile) aboutContentEl.style.top = profile.getBoundingClientRect().top + 'px';
+      if (spDropdown && !wasOpen) spDropdown.style.maxHeight = '';
+    }
+    window.addEventListener('resize', () => { if (aboutContentEl && aboutContentEl.classList.contains('visible')) alignAboutBottom(); });
+    function showAbout() {
+      alignAboutBottom();
+      if (heroWrap) heroWrap.classList.add('show-about');
+      if (aboutContentEl) { aboutContentEl.classList.add('visible'); aboutContentEl.setAttribute('aria-hidden', 'false'); }
+      if (window._vidPauseAll) window._vidPauseAll();
+      const vcb = document.getElementById('vidCenterBar');
+      if (vcb) vcb.classList.remove('visible');
+    }
+    function hideAbout() {
+      if (heroWrap) heroWrap.classList.remove('show-about');
+      if (aboutContentEl) { aboutContentEl.classList.remove('visible'); aboutContentEl.setAttribute('aria-hidden', 'true'); }
+      const vcb = document.getElementById('vidCenterBar');
+      const activeCard = document.querySelector('.work-card.active');
+      if (vcb && activeCard && activeCard.dataset.vidCard) vcb.classList.add('visible');
+      if (window._vidPlayActive) window._vidPlayActive();
+    }
+    document.addEventListener('click', e => {
+      if (aboutContentEl && aboutContentEl.classList.contains('visible') && !e.target.closest('#aboutContent') && !e.target.closest('[data-page="about"]')) hideAbout();
+    });
+    document.querySelectorAll('a[href="#/"][data-route]').forEach(a => {
+      a.addEventListener('click', e => { e.preventDefault(); hideAbout(); showPage('home'); window.location.hash = '#/'; });
+    });
+    document.querySelectorAll('[data-page="about"]').forEach(a => {
+      a.addEventListener('click', e => { e.preventDefault(); showAbout(); });
+    });
+
+    function route() {
+      const hash = window.location.hash || '';
+      const cleaned = hash.replace(/^#\/?/, '').replace(/\/$/, '');
+      if (cleaned === 'about') {
+        showPage('home');
+        showAbout();
+        return;
+      }
+      showPage('home');
+      if (hash === '' || hash === '#/' || hash === '#') window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('hashchange', route);
+
+    document.addEventListener('click', e => {
+      const link = e.target.closest('a[data-route]');
+      if (!link) return;
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        closePanel();
+      }
+    });
+
+    route();
+
+    /* ═══════════════════════════════════════════════════════════
+       Panel toggle
+       ═══════════════════════════════════════════════════════════ */
+    const spOverlays = document.querySelectorAll('.sp-overlay');
+    const sidePanel = document.getElementById('sidePanel');
+    function openPanel() { sidePanel && sidePanel.classList.add('open'); spOverlays.forEach(o => o.classList.add('active')); document.querySelectorAll('.sp-close').forEach(b => b.style.display = 'flex'); }
+    function closePanel() { sidePanel && sidePanel.classList.remove('open'); spOverlays.forEach(o => o.classList.remove('active')); document.querySelectorAll('.sp-close').forEach(b => b.style.display = 'none'); }
+    document.querySelectorAll('.sp-toggle').forEach(btn => btn.addEventListener('click', openPanel));
+    document.querySelectorAll('.sp-close').forEach(btn => btn.addEventListener('click', closePanel));
+    spOverlays.forEach(o => o.addEventListener('click', closePanel));
+
+    /* ═══════════════════════════════════════════════════════════
+       Home work strip carousel
+       ═══════════════════════════════════════════════════════════ */
+    function initStrip(trackId, countId) {
+      const track = document.getElementById(trackId);
+      if (!track) return;
+      const cards = Array.from(track.querySelectorAll('.work-card'));
+      const dots = track.closest('.hero-bottom, .work-section').querySelectorAll('.work-dots .dot');
+      const countEl = document.getElementById(countId);
+      let current = 0;
+      const introEl = document.getElementById('workIntroText');
+      const introTitle = document.getElementById('workIntroTitle');
+      const workMeta = document.getElementById('workMeta');
+      const vidCenterBar = document.getElementById('vidCenterBar');
+      function selectCard(idx) {
+        hideAbout();
+        current = idx;
+        cards.forEach((c, i) => c.classList.toggle('active', i === idx));
+        if (dots.length) dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+        if (countEl) countEl.textContent = String(idx + 1).padStart(2, '0');
+        const card = cards[idx];
+        if (card) {
+          if (workMeta) workMeta.classList.add('visible');
+          const scrollLeft = card.offsetLeft + card.offsetWidth / 2 - track.offsetWidth / 2;
+          track.scrollTo({ left: Math.max(0, scrollLeft), behavior: 'smooth' });
+          if (introEl || introTitle) {
+            if (introEl) introEl.style.opacity = '0';
+            if (introTitle) introTitle.style.opacity = '0';
+            setTimeout(() => {
+              const titleEl = card.querySelector('.card-title');
+              if (introTitle) { introTitle.textContent = titleEl ? titleEl.textContent : ''; introTitle.style.opacity = '1'; }
+              if (introEl) { introEl.textContent = card.dataset.intro || ''; introEl.style.opacity = '1'; }
+            }, 150);
+          }
+        }
+      }
+
+      const total = cards.length;
+      if (dots.length) dots.forEach((d, i) => d.addEventListener('click', () => selectCard(i)));
+      cards.forEach((c, i) => c.addEventListener('click', e => { if (!e.defaultPrevented) { e.preventDefault(); selectCard(i); } }));
+
+      let vidFirstLoad = true;
+      const workBgEl = document.getElementById('workBg');
+      const workVideoBg = document.getElementById('workVideoBg');
+      const videoSelector = document.getElementById('videoSelector');
+      const workImgBg = document.getElementById('workImgBg');
+      const imgSelector = document.getElementById('imgSelector');
+      cards.forEach(c => {
+        c.addEventListener('click', () => {
+          if (c.dataset.vidCard && c.dataset.reel) {
+            if (workVideoBg) {
+              if (window._vidPauseAll) window._vidPauseAll();
+              workVideoBg.querySelectorAll('.work-vid').forEach(v => v.classList.toggle('active', v.dataset.vid === 'reel'));
+              if (window._vidPlayActive) window._vidPlayActive();
+              if (vidFirstLoad) { vidFirstLoad = false; setTimeout(() => workVideoBg.classList.add('active'), 1300); } else { workVideoBg.classList.add('active'); }
+            }
+            if (videoSelector) {
+              document.querySelectorAll('.vid-sel-regular').forEach(b => b.style.display = 'none');
+              document.querySelectorAll('.vid-sel-reel').forEach(b => b.style.display = '');
+              videoSelector.classList.add('visible');
+            }
+            if (vidCenterBar) vidCenterBar.classList.add('visible');
+            if (workImgBg) workImgBg.classList.remove('active');
+            if (imgSelector) imgSelector.classList.remove('visible');
+            if (workBgEl) workBgEl.style.opacity = '0';
+          } else if (c.dataset.vidCard) {
+            if (workVideoBg) {
+              if (window._vidPauseAll) window._vidPauseAll();
+              workVideoBg.querySelectorAll('.work-vid').forEach(v => v.classList.toggle('active', v.dataset.vid === 'p3-1'));
+              if (window._vidPlayActive) window._vidPlayActive();
+              if (vidFirstLoad) { vidFirstLoad = false; setTimeout(() => workVideoBg.classList.add('active'), 1300); } else { workVideoBg.classList.add('active'); }
+            }
+            if (videoSelector) {
+              document.querySelectorAll('.vid-sel-regular').forEach(b => b.style.display = '');
+              document.querySelectorAll('.vid-sel-reel').forEach(b => b.style.display = 'none');
+              videoSelector.classList.add('visible');
+              videoSelector.querySelectorAll('.vid-sel-regular').forEach(btn => btn.classList.toggle('active', btn.dataset.vid === 'p3-1'));
+            }
+            if (vidCenterBar) vidCenterBar.classList.add('visible');
+            if (workImgBg) workImgBg.classList.remove('active');
+            if (imgSelector) imgSelector.classList.remove('visible');
+            if (workBgEl) workBgEl.style.opacity = '0';
+          } else if (c.dataset.images) {
+            if (workImgBg) {
+              workImgBg.classList.add('active');
+              workImgBg.querySelectorAll('.work-img').forEach(img => img.classList.toggle('active', img.dataset.img === '1'));
+            }
+            if (imgSelector) {
+              imgSelector.classList.add('visible');
+              imgSelector.querySelectorAll('.img-sel-btn').forEach(btn => { btn.classList.remove('active'); if (btn.dataset.img === '1') btn.classList.add('active'); });
+            }
+            if (workVideoBg) { workVideoBg.classList.remove('active'); if (window._vidPauseAll) window._vidPauseAll(); }
+            if (videoSelector) videoSelector.classList.remove('visible');
+            if (vidCenterBar) vidCenterBar.classList.remove('visible');
+            if (workBgEl) workBgEl.style.opacity = '0';
+          } else {
+            const bg = c.dataset.bg;
+            if (workBgEl) {
+              if (bg) { workBgEl.style.backgroundImage = `url("${bg}")`; workBgEl.style.opacity = '1'; }
+              else { workBgEl.style.opacity = '0'; }
+            }
+            if (workVideoBg) { workVideoBg.classList.remove('active'); if (window._vidPauseAll) window._vidPauseAll(); }
+            if (videoSelector) videoSelector.classList.remove('visible');
+            if (vidCenterBar) vidCenterBar.classList.remove('visible');
+            if (workImgBg) workImgBg.classList.remove('active');
+            if (imgSelector) imgSelector.classList.remove('visible');
+          }
+        });
+      });
+
+      /* Drag scroll */
+      let isDown = false, startX = 0, scrollLeft = 0, moved = false;
+      track.addEventListener('mousedown', e => { isDown = true; moved = false; startX = e.pageX - track.offsetLeft; scrollLeft = track.scrollLeft; });
+      track.addEventListener('mouseleave', () => { isDown = false; });
+      track.addEventListener('mouseup', () => { isDown = false; });
+      track.addEventListener('mousemove', e => {
+        if (!isDown) return;
+        e.preventDefault();
+        const walk = (e.pageX - track.offsetLeft - startX) * 1.4;
+        if (Math.abs(walk) > 4) moved = true;
+        track.scrollLeft = scrollLeft - walk;
+      });
+      track.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+    }
+
+    initStrip('homeTrack', 'homeCount');
+
+    /* ── Image Selector ──────────────────────────────────── */
+    (function initImgSelector() {
+      const imgBtns = document.querySelectorAll('#imgSelector .img-sel-btn');
+      const imgs = document.querySelectorAll('#workImgBg .work-img');
+      imgBtns.forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          hideAbout();
+          const img = btn.dataset.img;
+          imgBtns.forEach(b => { b.classList.remove('active'); if (b.dataset.img === img) b.classList.add('active'); });
+          imgs.forEach(v => { v.classList.remove('active'); if (v.dataset.img === img) v.classList.add('active'); });
+        });
+      });
+    })();
+
+    /* ── Video Selector ──────────────────────────────────── */
+    window.addEventListener('load', function() {
+      const selBtns = document.querySelectorAll('.vid-sel-btn');
+      const vids    = document.querySelectorAll('#workVideoBg .work-vid');
+      const progress  = document.getElementById('vidProgress');
+      const timeline  = document.getElementById('vidTimeline');
+      const volBtn    = document.getElementById('vidVolBtn');
+      const volSlider = document.getElementById('vidVolSlider');
+      const playBtn   = document.getElementById('vidPlayBtn');
+      let rafId = null;
+      let lastVol = 0.15;
+      let currentVolume = 0;
+
+      const players = {};
+      vids.forEach(el => {
+        const iframe = el.querySelector('iframe');
+        if (iframe && typeof Vimeo !== 'undefined') {
+          const p = new Vimeo.Player(iframe);
+          players[el.dataset.vid] = p;
+          p.setVolume(0);
+          p.on('play',  () => syncPlayIcon());
+          p.on('pause', () => syncPlayIcon());
+        }
+      });
+
+      function playerOf(el) {
+        const vp = players[el.dataset.vid];
+        if (vp) return {
+          play()            { return vp.play(); },
+          pause()           { return vp.pause(); },
+          setVolume(v)      { return vp.setVolume(v); },
+          getDuration()     { return vp.getDuration(); },
+          getCurrentTime()  { return vp.getCurrentTime(); },
+          setCurrentTime(t) { return vp.setCurrentTime(t); },
+          isPaused()        { return vp.getPaused(); },
+        };
+        return {
+          play()            { el.play(); return Promise.resolve(); },
+          pause()           { el.pause(); return Promise.resolve(); },
+          setVolume(v)      { el.volume = v; el.muted = (v === 0); return Promise.resolve(); },
+          getDuration()     { return Promise.resolve(el.duration); },
+          getCurrentTime()  { return Promise.resolve(el.currentTime); },
+          setCurrentTime(t) { el.currentTime = t; return Promise.resolve(); },
+          isPaused()        { return Promise.resolve(el.paused); },
+        };
+      }
+
+      function getActiveEl() { return document.querySelector('#workVideoBg .work-vid.active'); }
+
+      function syncVolUI(vol) {
+        if (!volBtn) return;
+        volBtn.querySelector('.vol-icon-on').style.display  = vol > 0 ? '' : 'none';
+        volBtn.querySelector('.vol-icon-off').style.display = vol > 0 ? 'none' : '';
+        if (volSlider) volSlider.value = vol;
+      }
+
+      function syncPlayIcon() {
+        const el = getActiveEl();
+        if (!playBtn || !el) return;
+        playerOf(el).isPaused().then(paused => {
+          playBtn.querySelector('.play-icon-play').style.display  = paused ? '' : 'none';
+          playBtn.querySelector('.play-icon-pause').style.display = paused ? 'none' : '';
+        });
+      }
+
+      function updateProgress() {
+        const el = getActiveEl();
+        if (el) {
+          const p = playerOf(el);
+          Promise.all([p.getCurrentTime(), p.getDuration()]).then(([cur, dur]) => {
+            if (dur && progress) progress.style.width = (cur / dur * 100) + '%';
+          });
+        }
+        rafId = requestAnimationFrame(updateProgress);
+      }
+
+      function startProgress() { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(updateProgress); }
+
+      window._vidPauseAll = () => vids.forEach(el => playerOf(el).pause());
+      window._vidPlayActive = () => { const el = getActiveEl(); if (el) playerOf(el).play(); };
+
+      selBtns.forEach(btn => {
+        btn.addEventListener('click', e => {
+          e.stopPropagation();
+          hideAbout();
+          const vid = btn.dataset.vid;
+          selBtns.forEach(b => b.classList.toggle('active', b.dataset.vid === vid));
+          vids.forEach(v => {
+            const isActive = v.dataset.vid === vid;
+            v.classList.toggle('active', isActive);
+            isActive ? playerOf(v).play() : playerOf(v).pause();
+          });
+          startProgress();
+        });
+      });
+
+      if (timeline) {
+        let scrubbing = false;
+        function scrubTo(clientX) {
+          const el = getActiveEl();
+          if (!el) return;
+          const rect = timeline.getBoundingClientRect();
+          const pct  = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+          playerOf(el).getDuration().then(dur => {
+            if (!dur) return;
+            playerOf(el).setCurrentTime(pct * dur);
+            if (progress) progress.style.width = (pct * 100) + '%';
+          });
+        }
+        timeline.addEventListener('mousedown', e => { scrubbing = true; scrubTo(e.clientX); });
+        window.addEventListener('mousemove',   e => { if (scrubbing) scrubTo(e.clientX); });
+        window.addEventListener('mouseup',     () => { scrubbing = false; });
+        timeline.addEventListener('touchstart', e => { scrubbing = true; scrubTo(e.touches[0].clientX); }, { passive: true });
+        window.addEventListener('touchmove',    e => { if (scrubbing) scrubTo(e.touches[0].clientX); }, { passive: true });
+        window.addEventListener('touchend',     () => { scrubbing = false; });
+      }
+
+      if (volBtn) {
+        volBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          if (currentVolume > 0) {
+            lastVol = currentVolume;
+            currentVolume = 0;
+            vids.forEach(v => playerOf(v).setVolume(0));
+            syncVolUI(0);
+          } else {
+            currentVolume = lastVol || 0.5;
+            vids.forEach(v => playerOf(v).setVolume(currentVolume));
+            syncVolUI(currentVolume);
+          }
+        });
+      }
+
+      if (volSlider) {
+        volSlider.addEventListener('input', e => {
+          e.stopPropagation();
+          currentVolume = parseFloat(volSlider.value);
+          if (currentVolume > 0) lastVol = currentVolume;
+          vids.forEach(v => playerOf(v).setVolume(currentVolume));
+          syncVolUI(currentVolume);
+        });
+      }
+
+      if (playBtn) {
+        playBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          const el = getActiveEl();
+          if (!el) return;
+          playerOf(el).isPaused().then(paused => {
+            paused ? playerOf(el).play() : playerOf(el).pause();
+          });
+        });
+      }
+
+      const fsBtn = document.getElementById('vidFullscreenBtn');
+      if (fsBtn) {
+        fsBtn.addEventListener('click', e => {
+          e.stopPropagation();
+          const el = getActiveEl();
+          const target = (el && el.querySelector('iframe')) || el;
+          if (!target) return;
+          if (target.requestFullscreen) target.requestFullscreen();
+          else if (target.webkitRequestFullscreen) target.webkitRequestFullscreen();
+        });
+      }
+
+      syncPlayIcon();
+      syncVolUI(0);
+      startProgress();
+    });
+
+    /* ═══════════════════════════════════════════════════════════
+       Custom cursor
+       ═══════════════════════════════════════════════════════════ */
+    (function initCursor() {
+      if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      document.body.classList.add('cursor-on');
+      const dot = document.querySelector('.cursor-dot');
+      const ring = document.querySelector('.cursor-ring');
+      let x = 0, y = 0, rx = 0, ry = 0, hovering = false;
+
+      window.addEventListener('mousemove', e => { x = e.clientX; y = e.clientY; });
+      window.addEventListener('mouseover', e => {
+        hovering = !!(e.target.closest && e.target.closest('a, button, .work-card, .sp-social-btn, .nav-arrow, .dot'));
+        ring.classList.toggle('is-hover', hovering);
+      });
+
+      const tick = () => {
+        rx += (x - rx) * 0.18;
+        ry += (y - ry) * 0.18;
+        dot.style.transform = `translate(${x - 3}px, ${y - 3}px)`;
+        const halfW = ring.offsetWidth / 2;
+        const halfH = ring.offsetHeight / 2;
+        ring.style.transform = `translate(${rx - halfW}px, ${ry - halfH}px)`;
+        ring.style.opacity = hovering ? '0.35' : '0.7';
+        requestAnimationFrame(tick);
+      };
+      tick();
+    })();
+
+    /* ═══════════════════════════════════════════════════════════
+       HKT clock
+       ═══════════════════════════════════════════════════════════ */
+    function updateHKT() {
+      const now = new Date();
+      const hkt = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Hong_Kong' }));
+      const hh = String(hkt.getHours()).padStart(2, '0');
+      const mm = String(hkt.getMinutes()).padStart(2, '0');
+      const el = document.getElementById('spTime');
+      if (el) el.textContent = hh + ':' + mm + ' HKT';
+    }
+    updateHKT();
+    setInterval(updateHKT, 30000);
+  </script>
+</body>
+</html>
