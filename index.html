@@ -655,7 +655,12 @@
       function startProgress() { cancelAnimationFrame(rafId); rafId = requestAnimationFrame(updateProgress); }
 
       window._vidPauseAll = () => vids.forEach(el => playerOf(el).pause());
-      window._vidPlayActive = () => { const el = getActiveEl(); if (el) playerOf(el).play(); };
+      window._vidPlayActive = () => {
+        const el = getActiveEl();
+        if (!el) return;
+        const p = playerOf(el);
+        p.setCurrentTime(0).then(() => p.play()).catch(() => p.play());
+      };
       window._vidStartProgress = startProgress;
       startProgress();
 
