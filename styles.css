@@ -680,6 +680,8 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
   .hero-content-wrap > * { display: none !important; }
   .hero-bottom { margin-top: 0 !important; }
   .hero-content-wrap.show-about ~ .hero-bottom { display: none !important; }
+  body:has(.hero-content-wrap.show-about) #vidCenterBar,
+  body:has(.hero-content-wrap.show-about) .work-meta { display: none !important; }
   .work-meta {
     position: relative !important;
     width: 100% !important;
