@@ -351,6 +351,22 @@ button { cursor: pointer; background: none; border: none; color: inherit; font: 
   overflow: visible;
   max-height: none;
 }
+.sp-nav-toggle { display: none; }
+@media (max-width: 1099px) {
+  .sp-nav { display: flex; align-items: center; justify-content: space-between; }
+  .sp-nav-toggle {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2rem; height: 2rem; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.2);
+    background: rgba(255,255,255,.05);
+    color: rgba(255,255,255,.8);
+    transition: transform .3s cubic-bezier(.22,1,.36,1), background .2s;
+  }
+  .sp-nav-toggle:hover { background: rgba(255,255,255,.12); }
+  .sp-nav-toggle[aria-expanded="false"] { transform: rotate(-90deg); }
+  .sp-dropdown { overflow: hidden; max-height: 2400px; transition: max-height .4s cubic-bezier(.22,1,.36,1); }
+  .sp-dropdown:not(.open) { max-height: 0; }
+}
 
 
 /* ── Mobile Toggle / Overlay ────────────────────────────── */

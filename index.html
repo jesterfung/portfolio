@@ -295,6 +295,9 @@
           <a href="#/" data-route>HOME</a>
           <a href="#/about" data-page="about" data-route>ABOUT ME</a>
         </div>
+        <button class="sp-nav-toggle" id="spNavToggle" type="button" aria-label="Toggle profile" aria-expanded="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg>
+        </button>
       </nav>
       <div class="sp-dropdown open" id="spDropdown">
         <section class="sp-card sp-profile">
@@ -793,6 +796,25 @@
         requestAnimationFrame(tick);
       };
       tick();
+    })();
+
+    /* ═══════════════════════════════════════════════════════════
+       Mobile side-panel nav toggle
+       ═══════════════════════════════════════════════════════════ */
+    (function initNavToggle() {
+      const toggle = document.getElementById('spNavToggle');
+      const dropdown = document.getElementById('spDropdown');
+      if (!toggle || !dropdown) return;
+      const isMobile = () => window.matchMedia('(max-width: 1099px)').matches;
+      function setOpen(open) {
+        dropdown.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+      }
+      if (isMobile()) setOpen(false);
+      toggle.addEventListener('click', () => setOpen(!dropdown.classList.contains('open')));
+      window.addEventListener('resize', () => {
+        if (!isMobile()) setOpen(true);
+      });
     })();
 
     /* ═══════════════════════════════════════════════════════════
